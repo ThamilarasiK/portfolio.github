@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;          
+               <a href="index.html">HOME</a>&nbsp; 
+               <a href="About.html">ABOUT</a>&nbsp;
+               <a href="Contact.html">CONTACT</a>&nbsp;
+              <a href="location.html">LOCATION</a>&nbsp;
+              <div class="dropdown">
+                <button onclick="toggleDropdown()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">PROJECTS</a> &nbsp;      
+                    <a href="OTP.html">OTP</a>
+                    <a href="Random_Task.html">Randomnumber</a>
+                    <a href="Converter.html">min to sec</a>
+                    <a href="Calculator.html">Calculator</a>
+                </div>
+              </div>
+            </tr>
+            </h1>
+ </div>
+   
+<!-- <h2 id="name">
+    <a href="OTP.html">OTP</a>
+    <a href="Random_Task.html">Randomnumber</a>
+    <a href="Converter.html">min to sec</a>
+    <a href="Calculator.html">Calculator</a>
+</h2> --> 
+    &nbsp;&nbsp;
+    <h1 id="tamil"><span>Hello Everyone</span></h1>
+    <p id="a"><SPAN>I am Thamilarasi K</SPAN></p><br>
+    <div id="tamil1">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="ampm"></span>
+    </div>
+<script>
+function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown");
+  if (dropdown.style.display === "none") {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+
+
+
+    function digital_clock(){
+        let clock = new Date();
+        let hr =clock.getHours();
+        let min=clock.getMinutes();
+        let sec=clock.getSeconds();
+        let ampmresult;
+       if(hr<12)
+        ampmresult="AM";      
+        else
+           ampmresult="PM";
+
+         ampm.innerHTML=ampmresult;
+       let hours=document.querySelector("#hours");
+       if (hr>12);
+       hr=hr-12;
+       if (hr<10)
+       hr="0"+hr;
+       hours.innerHTML=hr;
+       let minutes =document.querySelector("#minutes");
+       if (min<10)
+       min="0"+min;
+       minutes.innerHTML=min;
+       let seconds =document.querySelector("#seconds");
+       if (sec<10)
+       sec="0"+sec;
+       seconds.innerHTML=sec;
+        }
+        setInterval(digital_clock,1000)
+
+</script>         
+</body>
+</html>

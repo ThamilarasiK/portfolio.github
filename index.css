@@ -1,0 +1,85 @@
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #cc2121;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* #mydropdown:hover{
+    color: aqua;
+} */
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+
+body{
+    text-align:center;
+    background-size:cover;
+    background-image: url(nature.jpeg);
+}
+.container{
+    font-size: 50px;
+    /* text-decoration: none; */
+    text-decoration-line: none;
+    color: black;
+}
+
+#a{
+    color: red;
+    font-size:60px ;
+    font-family: 'Times New Roman', Times, serif;
+}
+#a:hover{
+    color: pink;
+}
+#tamil{
+    font-size: 70px;
+    color: rgba(12, 247, 110, 0.952);
+    position:relative;
+}
+#b:hover{
+    color:rgb(240, 92, 6) ;
+}
+#tamil1{
+    display: flex;
+    justify-content:center;
+    align-items: left;
+   margin-inline-start: auto;
+   color:yellow;
+   font-family: fantasy;
+   font-size: 70px;
+}
+#tamil1:hover{
+    color: aqua;
+}
+#name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:30px;
+    display: grid;
+    justify-content: end;
+    overflow:auto;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+}
+#name:hover{
+    color:gold;
+}
+#name:focus{
+    color: gold;
+}

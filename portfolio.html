@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    </nav>
+    <header>
+        <h1>ThamilarasiK</h1>
+        <p>I am a fresher completed  B.E CSE</p>
+    </header>
+    <div id="tamil1">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="ampm"></span>
+    </div>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Aspiring as a web developer with a passion for creating user-friendly and visually appealing websites.</p>
+        </section>
+        <section id="Degree">
+            <h2>Education</h2>
+            <div class="tamil">
+             <h3>B.E</h3>
+             <P>Sengunthar Engineering College</P>
+            </div>
+            <div class="tamil">
+                <h3>12th</h3>
+                <p>SVC Matriculation Higher secondary School</p>
+            </div>
+            <div class="tamil">
+                <h3>10th</h3>
+                <p>Sri Bharathi Vidhyalya matricculation School</p>
+            </div>
+
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>ALUMINI PORTAL</h3>
+                <p>It is used to contact the alumini to fill there details.A web based alumini software would provide with any single repositary form entire alumini data</p>
+            </div>
+            <div class="project">
+                <h3>AUTOMATIC QUESTION PAPER GENERATOR</h3>
+                <p>Here we are proposing an Intelligent Automatic Question Paper Generator System which provides storage of the data, fast operations, and high security for all its tasks. It can be helpful to many educational as well as NGO institutes. Tasks performed by this system are automated and because of that storage space, security is not a concern anymore. The project automatic question paper generation system will enable college authorities to automatically generate question papers out of existing question bank in the database. The system will have capability to process different unique sets of papers very automatically.. The software will produce random question paper set such that the question does not repeat in the same paper. The software will empower the college with a powerful tool to generate question papers in a very short span of time thus saving a lot of their precious time Four types of modules there are login module ,Administrator module,staff management,priority assistant module</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: thamilarasik26@gmail.com</p>
+            <p>Phone: 9566352952</p>
+            <p><a href="https://www.linkedin.com/in/thamilarasi-k-582008250">Linkedin</a></p>
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <button id="DownloadResume">Download Resume</button>
+            <div id="resumeContainer">
+                
+            </div>
+        </section>
+            
+<script>
+document.getElementById('DownloadResume').addEventListener('click', function() {
+    fetch('Tamil _resume.pdf') 
+        .then(response => response.blob())
+        .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url
+            a.download = 'Tamil _resume.pdf';
+            document.getElementById('resumeContainer').appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+        })
+        .catch(error => console.error(error));
+});
+
+function digital_clock(){
+        let clock = new Date();
+        let hr =clock.getHours();
+        let min=clock.getMinutes();
+        let sec=clock.getSeconds();
+        let ampmresult;
+       if(hr<12)
+        ampmresult="AM";      
+        else
+           ampmresult="PM";
+
+         ampm.innerHTML=ampmresult;
+       let hours=document.querySelector("#hours");
+       if (hr>12);
+       hr=hr-12;
+       if (hr<10)
+       hr="0"+hr;
+       hours.innerHTML=hr;
+       let minutes =document.querySelector("#minutes");
+       if (min<10)
+       min="0"+min;
+       minutes.innerHTML=min;
+       let seconds =document.querySelector("#seconds");
+       if (sec<10)
+       sec="0"+sec;
+       seconds.innerHTML=sec;
+        }
+        setInterval(digital_clock,1000)
+
+        </script>
+
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

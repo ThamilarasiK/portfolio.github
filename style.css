@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e73939;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #f7f4f8;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #16dfbd;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.project {
+    border: 1px solid #131212;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 0;
+}
+#resumeContainer {
+    display: none;
+}
+.tamil{
+    border: 1px solid #111010;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#tamil1{
+    display: flex;
+    justify-content:baseline;
+    align-items: left;
+    margin-top: 20px;
+   color:yellow;
+   font-family: fantasy;           
+}
+#tamil1:hover{
+    color:green;
+}

@@ -1,0 +1,22 @@
+body{
+        background-size: cover;
+        background-image: url(developer.jpeg);
+        margin-top: 10px;
+        padding: 1px; 
+        color: rgba(4, 1, 20, 0.993);
+}  
+#ta:hover{
+       color: rgb(236, 81, 20);
+}
+#ta{
+    font-size: 20px;
+}
+#a{
+    font-size: 20px;
+}
+#a:hover{
+    color:blueviolet ;
+}
+.p{
+    text-decoration: underline;
+}
